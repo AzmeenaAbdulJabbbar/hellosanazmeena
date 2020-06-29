@@ -37,7 +37,7 @@ jobs:
     - name: surge install
       run: npm install --global surge
     - name: deploy on surge 
-      run: surge ./build xyz-azmeena.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build http://xyz-azmeena.surge.sh --token ${{secrets.SURGE_TOKEN}}
     
     
     
